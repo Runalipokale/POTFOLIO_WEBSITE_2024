@@ -1,0 +1,301 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bodoni+Moda:opsz,wght@6..96,900&family=Dancing+Script:wght@600&family=Edu+SA+Beginner:wght@400;500&family=Kalam&family=Passions+Conflict&family=Roboto&display=swap');
+
+:root {
+  --white: #fff;
+  --black: #1c2b2d;
+  --blue: #31326f;
+  --light-blue: #005490;
+  --color-primary: #9d0191;
+  --color-sec: #db6400;
+  --grey: #eee;
+  --dark-grey: #222831;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  background-color: black;
+  color: #eee;
+  font-family: 'Anton', sans-serif;
+font-family: 'Bodoni Moda', serif;
+font-family: 'Dancing Script', cursive;
+font-family: 'Edu SA Beginner', cursive;
+font-family: 'Kalam', cursive;
+font-family: 'Passions Conflict', cursive;
+font-family: 'Roboto', sans-serif;
+}
+
+p {
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+
+img {
+  width: 100%;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+nav{
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+nav li{
+  list-style: none;
+  cursor: pointer;
+}
+.logo{
+ width: 40px;
+ height: 40px;
+}
+.hero-section{
+  height: 80vh;
+  line-height: 1.7;
+  letter-spacing: 2.5px;
+}
+.hero-section h1{
+  font-size:6rem;
+  font-weight: 900;
+  color: hotpink;
+  
+}
+.hero-section h2{
+  font-size: 3rem;
+  font-weight: 400;
+}
+.hero-section h3{
+  font-size: 2rem;
+  font-weight: 400;
+}
+.triangle{
+   position: relative;
+   width: 60px;
+   border-bottom: 120px solid lightpink;
+   border-left: 85px solid transparent;
+   border-right: 85px solid transparent;
+   animation: 10s linear infinite anime1;
+}
+.circle{
+  position: relative;
+  height: 200px;
+  width: 200px;
+  background-color: transparent;
+  border-radius:50%;
+  border-color:var(--white);
+  border-style: dotted;
+  animation: 4s infinite anime2;
+}
+#circle-1{
+  height: 120px;
+  width: 120px;
+  top: -30%;
+}
+#circle-2{
+   top: -45%;
+   left: 90%;
+}
+#circle-3{
+  left:30%;
+  bottom:140%;
+  height: 150px;
+  width: 150px;
+}
+#triangle-1{
+  top: 65%;
+  left: 80%;
+  font-size: 8rem;
+  transform: rotate(-20deg);
+  width: 6rem;
+}
+#triangle-2{
+  transform: rotate(55deg);
+  border-left: 75px solid transparent;
+  border-right: 75px solid transparent;
+  border-bottom: 130px solid hotpink;
+}
+#triangle-3{
+  transform: rotate(15deg);
+  left: 80%;
+  top: -30%;
+  border-left: 70px solid transparent;
+  border-right: 70px solid transparent;
+  border-bottom: 110px solid lightblue;
+}
+#triangle-4{
+  left: 25%;
+  top: 10%;
+  transform: rotate(12deg);
+  border-bottom: 120px solid lightgreen;
+}
+@keyframes anime1 {
+  0%{
+    transform: rotate(15deg);
+  }
+  50%{
+    transform: rotate(-15deg);
+  }
+  100%{
+    transform: scale(1.3);
+  }
+}
+@keyframes anime2 {
+  0%{
+    transform: rotate(45deg);
+  }
+  50%{
+    transform: scale(1.2);
+  }
+  100%{
+    transform: skew(20px,20px);
+  }
+}
+.info{
+  position: static;
+  text-align: center;
+  margin-top:-60%;
+}
+.box{
+  height: 30vh;
+  padding: 30px;
+  width: 25%;
+  backdrop-filter: blur(10px);
+  border: 1px solid grey;
+  border-radius: 12px;
+  box-shadow: -5px 5px 10px hotpink;
+}
+.box h1{
+  font-size: 2.2rem;
+  color: rgb(90, 201, 238);
+}
+.box img{
+  height: 50px;
+  width: 50px;
+}
+.skills{
+  height: 80vh;
+}
+.projects img{
+  height: 40vh;
+  width: 45vw;
+}
+.project-description{
+  height: 35vh;
+  width: 65%;
+  padding-top: 10rem;
+  margin: 15px;
+  font-size: 2rem;
+}
+.projects h1{
+  color: lightblue;
+}
+.about h1{
+  font-size: 2.6rem;
+  color:lightblue;
+}
+.about p{
+  font-size: 1.7rem;
+}
+.about{
+  height: 80vh;
+}
+.square-1{
+  width: 100vw;
+  height: 40vh;
+  background: linear-gradient(to top,hotpink, lightblue);
+  position: relative;
+  right: -50%;
+  top: 20%;
+  z-index: 14;
+  border-radius: 15px;
+  box-shadow: 0 0 10px 5px rgba(3, 3, 236, 0.645);
+  transform: rotate(45deg);
+}
+.square-2{
+  background: linear-gradient(to top,hotpink, lightblue);
+  width: 180vw;
+  height: 35vh;
+  position: relative;
+  top: 60px;
+  left: 10%;
+  z-index: 12;
+  border-radius: 15px;
+  box-shadow: 0 0 10px 5px rgba(3, 3, 236, 0.645);
+  transform: rotate(45deg);
+}
+.square-3{
+  background: linear-gradient(to top,hotpink, lightblue);
+  width: 100vw;
+  height: 40vh;
+  position: static;
+  top: 38%;
+  z-index: 18;
+  border-radius: 15px;
+  box-shadow: 0 0 10px 6px rgba(3, 3, 236, 0.645);
+  transform: rotate(45deg);
+}
+/* @keyframes rotate {
+  0%{
+    transform: rotate(45deg);
+  }
+  50%{
+    transform: rotate(90deg);
+  }
+  100%{
+    transform: rotate(180deg);
+  }
+} */
+footer{
+  height: 70vh;
+  width: 80vw;
+  margin-top: 10%;
+  background: linear-gradient(to top, hotpink , lightblue);
+  padding: 30px;
+}
+footer a{
+  color: white;
+  text-decoration: none;
+  font-size: 1.6rem;
+}
+footer .logo{
+   width: 7rem;
+   height: 5.5rem;
+}
+.copyright p{
+  font-size: 1.5rem;
+  font-weight: 100;
+  margin-top: 10rem;
+}
+footer .social-links{
+  font-size: 1.5rem;
+  margin-top: 6rem;
+  cursor: pointer;
+}
+#github:hover{
+  color:#0a64ff;
+  text-shadow: 0 0 10px #063c99;
+}
+#insta:hover{
+  color: rgb(248, 42, 228);
+  text-shadow: 0 0 10px rgb(243, 19, 131);
+}
+#telegram:hover{
+  color: rgb(127, 219, 250);
+  text-shadow: 0 0 10px rgb(127, 219, 250);
+}
+#linkdin:hover{
+  color: blue;
+  text-shadow: 0 0 10px rgba(0, 0, 255, 0.724);
+}
